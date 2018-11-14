@@ -28,6 +28,6 @@ func printOut(list[]int64) string{
 	nextEndTime := nextTime.AddDate(0,0,4-1)
 	
 	str := "before :"+beforeTime.Format(layout)+ "   last  :" + beforeEndTime.Format(layout)+"\n"
-	str += "next   :"+nextTime.Format(layout)+   "   last  :" + nextEndTime.Format(layout)
+	str += "next   :"+nextTime.Format(layout)+   "   last  :" + nextEndTime.Format(layout)+"\n"
 	return str
 }
