@@ -13,7 +13,7 @@ func main() {
 
 	for nowdate.Unix() > pocky.Unix() {
 		pockylist = append(pockylist,pocky.Format("2006/1/2"))
-		pocky = pocky.AddDate(0, 0, 28)
+		pocky = pocky.AddDate(0, 0, 28-1)
 	}
 	pockylist = append(pockylist,pocky.Format("2006/1/2"))
 
