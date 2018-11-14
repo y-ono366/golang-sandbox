@@ -12,9 +12,8 @@ func main() {
 	nowdate :=time.Now()
 
 	var pockylist []int64
-	for nowdate.Unix() > pocky.Unix() {
+	for ;nowdate.Unix() > pocky.Unix();pocky = pocky.AddDate(0, 0, 28-1) {
 		pockylist = append(pockylist,pocky.Unix())
-		pocky = pocky.AddDate(0, 0, 28-1)
 	}
 	pockylist = append(pockylist,pocky.Unix())
 	fmt.Printf(printOut(pockylist))
