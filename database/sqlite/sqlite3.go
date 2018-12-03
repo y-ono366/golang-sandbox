@@ -42,5 +42,5 @@ func main() {
 	q += ",('body2')"
 	db_exec(db, q)
 
-	db.Close()
+	defer db.Close()
 }
